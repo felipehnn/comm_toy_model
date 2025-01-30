@@ -26,7 +26,6 @@ def main():
 
             # Process the data
             print(f"Received data = {np.array(data)}", flush=True)
-            print(data.dtype)
 
             # Check for termination signal
             if data[0] == -1.0:
