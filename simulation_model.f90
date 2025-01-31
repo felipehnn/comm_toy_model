@@ -18,7 +18,8 @@ program simulation_model
     ! Simulation loop
     do step = 1, total_steps
         ! Simulate data: a vector evolving with time
-        data = [1.0d0 * step, 2.0d0 * step, 3.0d0 * step]
+        ! data = [1.0d0 * step, 2.0d0 * step, 3.0d0 * step]
+        data = [1.0d0 * (rank + 1) * step, 2.0d0 * (rank + 1) * step, 3.0d0 * (rank + 1) * step]
 
         ! Check conditions (e.g., every 10 steps)
         if (mod(step, 10) == 0) then
