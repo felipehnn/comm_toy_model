@@ -27,7 +27,7 @@ def main():
 
             # Process the data
             print(f"Received data = {np.array(data)}, rank = {status.source}", flush=True)
-            sleep(1)
+            sleep(0.5)
 
             # Check for termination signal
             if data[0] == -1.0:
